@@ -52,9 +52,9 @@ Este proyecto utiliza la [PokeAPI](https://pokeapi.co/) para obtener los datos d
 ## Funcionalidades
 - Visualización de Pokemon en tarjetas con su imagen y tipo.
 - Búsqueda en tiempo real de Pokemon por nombre.
+- Carga infinita para ver una lista extensa de Pokemón sin recargar la página: se implementó para gestionar los más de 1.000 Pokemón de la PokeAPI. En lugar de cargar todos los datos de una vez, se traen grupos de 40 Pokemón a medida que el usuario se desplaza hacia abajo, garantizando un rendimiento óptimo y una experiencia de navegación fluida.
+- Página de detalles con información detallada, estadísticas y habilidades de cada Pokemón.
+- Animaciones interactivas.
 - Carga infinita para explorar una lista extensa de Pokemón sin recargar la página: se implementó para gestionar los más de 1.000 Pokemón de la PokeAPI. En lugar de cargar todos los datos de una vez, se traen grupos de 40 Pokemón a medida que el usuario se desplaza hacia abajo, garantizando un rendimiento óptimo y una experiencia de navegación fluida.
 - Página de detalles con información detallada, estadísticas y habilidades de cada Pokemón.
 - Animaciones interactivas.
-
-## Conclusión
-Gracias por tomarte el tiempo de revisar este proyecto. Estoy emocionada de poder compartir mis habilidades con la comunidad de desarrolladores a través de esta aplicación.
