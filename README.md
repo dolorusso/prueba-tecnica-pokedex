@@ -1,40 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Pokedex App Next.js
+La Pokedex App es una aplicación web interactiva desarrollada con Next.js y React, que permite a los usuarios explorar el mundo de los Pokemón. Esta aplicación proporciona una interfaz intuitiva para visualizar una lista de Pokemones, acceder a sus detalles y estadísticas, y buscarlos por su nombre.
 
-## Getting Started
+## Pre-requisitos
+Antes de comenzar asegurate de tener lo siguiente en tu sistema:
 
-First, run the development server:
+1. **Node.js**:
+- Instalar [Node.js](https://nodejs.org/en), ya que Next.js depende de Node para su ejecución y desarrollo.
+- Asegúrate de tener instalada la versión 14 o superior, ya que Next.js requiere una versión actual de Node.js para funcionar correctamente.
+- Para verificar la instalación, ejecuta el siguiente comando en tu terminal:
+ ```bash
+     node -v
+ ```
+2. **npm**:
+- Node.js incluye npm (Node Package Manager) de forma predeterminada.
+- Verifica la instalación ejecutando:
+ ```bash
+     npm -v
+ ```
+## 🚀 Ejecución
+Sigue estos pasos para configurar y ejecutar el proyecto:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clonar el repositorio**:
+- Ejecuta el siguiente comando en tu terminal para clonar el repositorio:
+   ```bash
+       git clone https://github.com/dolorusso/prueba-tecnica-pokedex.git
+   ```
+2. **Navega a la carpeta del proyecto**:
+- Ejecuta el siguiente comando en tu terminal para cambiar al directorio del proyecto:
+  ```bash
+     cd prueba-tecnica-pokedex
+  ```
+3. **Instalar dependencias**:
+- Una vez en el directorio del proyecto, instala las dependencias utilizando npm:
+    ```bash
+        npm install
+    ```
+4. **Ejecutar la aplicación**:
+- Finalmente, ejecuta el servidor de desarrollo de Next.js:
+    ```bash
+        npm run dev
+    ```
+- Ahora puedes acceder a la aplicación en  `http://localhost:3000`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías utilizadas
+- Next.js: Framework de React que permite la creación de aplicaciones web optimizadas y con renderizado del lado del servidor.
+- React: Biblioteca de JavaScript para construir interfaces de usuario.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## API 
+Este proyecto utiliza la [PokeAPI](https://pokeapi.co/) para obtener los datos de los Pokemón. La API es consumida en tiempo real para actualizar la lista de Pokemón y mostrar sus detalles.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Funcionalidades
+- Visualización de Pokemon en tarjetas con su imagen y tipo.
+- Búsqueda en tiempo real de Pokemon por nombre.
+- Carga infinita para explorar una lista extensa de Pokemón sin recargar la página: se implementó para gestionar los más de 1.000 Pokemón de la PokeAPI. En lugar de cargar todos los datos de una vez, se traen grupos de 40 Pokemón a medida que el usuario se desplaza hacia abajo, garantizando un rendimiento óptimo y una experiencia de navegación fluida.
+- Página de detalles con información detallada, estadísticas y habilidades de cada Pokemón.
+- Animaciones interactivas.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Conclusión
+Gracias por tomarte el tiempo de revisar este proyecto. Estoy emocionada de poder compartir mis habilidades con la comunidad de desarrolladores a través de esta aplicación.
