@@ -54,4 +54,5 @@ Este proyecto utiliza la [PokeAPI](https://pokeapi.co/) para obtener los datos d
 - Búsqueda en tiempo real de Pokemon por nombre.
 - Carga infinita para ver una lista extensa de Pokemón sin recargar la página: se implementó para gestionar los más de 1.000 Pokemón de la PokeAPI. En lugar de cargar todos los datos de una vez, se traen grupos de 40 Pokemón a medida que el usuario se desplaza hacia abajo, garantizando un rendimiento óptimo y una experiencia de navegación fluida.
 - Página con información detallada, estadísticas y habilidades de cada Pokemón.
+- Diseño Responsive: La aplicación se adapta a diferentes tamaños de pantalla, asegurando una experiencia de usuario fluida en dispositivos móviles y de escritorio.
 - Animaciones interactivas.
