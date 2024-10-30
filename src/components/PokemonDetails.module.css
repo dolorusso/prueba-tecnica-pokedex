@@ -1,0 +1,188 @@
+.backgroundContainer {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://raw.githubusercontent.com/FallenDeity/PokeDex-Website/refs/heads/master/public/backgrounds/4.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    filter: blur(5px) brightness(40%);
+    z-index: -1; 
+}
+  
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgba(255, 255, 255, 0.616); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%; 
+  z-index: 1;
+}
+  
+  .name {
+    font-family: 'Bangers';
+    letter-spacing: 10px;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #12c8ffec;
+    text-shadow: 
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000; 
+     animation: spin 1s ease; 
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .image {
+    display: block;
+    margin: 0 auto;
+    animation: float 2s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-20px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }
+  
+  .statsContainer {
+    width: 100%; 
+    margin-top: 20px;
+  }
+  
+  .stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0; 
+    width: 100%; 
+  }
+  
+  .statName {
+    font-size: 18;
+    font-weight: bold;
+    color: #0c0c0c98;
+    width: 30%; 
+    text-align: left; 
+  }
+  
+  .barContainer {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 60%;
+    flex-grow: 1;
+  }
+  
+  .bar {
+    height: 15px;
+    background-color: #198a99;
+  }
+  
+  .statValue {
+    width: 15%;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #0c0c0c98;
+    font-weight: bold;
+    flex-basis: 15%;
+  }
+  
+  .abilitiesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin: 20px 0; 
+    max-width: fit-content;
+  }
+
+  .abilitiesTitle {
+    font-family: 'Londrina Shadow', cursive;
+    color: rgb(23, 86, 223);
+    font-size: 31px;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    text-align: center; 
+    animation: slideIn 2s ease;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(30px); 
+      opacity: 0; 
+    }
+    to {
+      transform: translateY(0); 
+      opacity: 1; 
+    }
+  }
+
+  .ability {
+    padding: 8px 12px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #0c0c0ca8;
+    font-weight: bold;
+    background: linear-gradient(135deg, #198a99c0, #1cabe4cc);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.658);
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ability:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+  .typeContainer {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 3px; 
+  }
+  
+  .typeBadge {
+      display: inline-block;
+      padding: 3px 8px; 
+      border-radius: 15px; 
+      color: #fff; 
+      text-align: center; 
+      font-size: 0.9rem; 
+      overflow: hidden; 
+      white-space: nowrap; 
+    }
+
+    .icon {
+      margin-right: 5px; 
+      font-size: 1.2em; 
+    }
